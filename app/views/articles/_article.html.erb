@@ -1,11 +1,11 @@
 <div id="<%= dom_id article %>">
   <p>
-    <strong>Title:</strong>
+    <strong><%= sort_link(@q, :title, "Title", default_order: :asc) %></strong>
     <%= article.title %>
   </p>
 
   <p>
-    <strong>Body:</strong>
+    <strong><%= sort_link(@q, :body, "Body", default_order: :asc)%></strong>
     <%= article.body %>
   </p>
 

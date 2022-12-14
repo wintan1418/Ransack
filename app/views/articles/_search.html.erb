@@ -3,8 +3,8 @@
 <%= f.label :title_cont %>
 <%= f.search_field :title_cont %>
 
-<%= f.label :body_cont %>
-<%= f.search_field :body_cont %>
+<%= f.label "search through" %>
+<%= f.search_field :title_or_body_cont, placeholder: "search" %>
 
 <%= f.submit "search"%>
 
